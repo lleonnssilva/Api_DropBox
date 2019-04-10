@@ -38,4 +38,4 @@ app.use(require('./routes'));
 app.use('/files', express.static(path.resolve(__dirname, '..', 'tmp')));
 
 // esta ouvindo request http e websocket
-server.listen(3333);
+server.listen(process.env.PORT || 3333);
