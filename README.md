@@ -14,6 +14,17 @@ também desenvolvidas durante a semana Omnistack da [Rocketseat](https://rockets
 * Yarn ou Npm
 * MongoDB
 
+### Endpoints
+
+Abaixo estão listados os endpoints da API
+
+- __POST__
+  - `/boxes`
+  - `/boxes/:boxId/files`
+
+- __GET__
+  - `/boxes/:boxId`
+
 ### Subindo a aplicação
 
 * Clone o projeto `git clone https://github.com/gabrielmq/omnistack-backend.git`.
