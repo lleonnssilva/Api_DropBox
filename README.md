@@ -18,11 +18,13 @@ também desenvolvidas durante a semana Omnistack da [Rocketseat](https://rockets
 
 Abaixo estão listados os endpoints da API
 
-- __POST__
+__POST__
   - `/boxes`
+    - body: `{ "title": "título box" }` 
   - `/boxes/:boxId/files`
+    - body: `form-data - key: file`
 
-- __GET__
+__GET__
   - `/boxes/:boxId`
 
 ### Subindo a aplicação
