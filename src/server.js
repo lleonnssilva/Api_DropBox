@@ -17,11 +17,7 @@ io.on("connection", socket => {
   });
 });
 
-// mongoose.connect(
-//   "mongodb://localhost:27017/week7",
-//   //"mongodb+srv://digidigi:digidigi@cluster0-9ty9k.mongodb.net/digi?retryWrites=true&w=majority",
-//   { useNewUrlParser: true }
-// );
+
 mongoose.connect(process.env.StrConexaoWeb, { useNewUrlParser: true });
 app.use((req, res, next) => {
   req.io = io;
