@@ -35,4 +35,4 @@ app.use(require("./routes"));
 app.use("/files", express.static(path.resolve(__dirname, "..", "tmp")));
 
 //server.listen(process.env.PORT || 3333);
-server.listen(3333, console.log("Conectado"));
+server.listen(process.env.PORT || 3333, console.log("Conectado"));
