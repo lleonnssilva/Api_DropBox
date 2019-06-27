@@ -5,12 +5,12 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 const dotenv = require("dotenv");
 const app = express();
-dotenv.config();
+
 app.use(cors());
 
 const server = require("http").Server(app);
 const io = require("socket.io")(server);
-
+dotenv.config();
 io.on("connection", socket => {
   socket.on("connectRoom", box => {
     socket.join(box);
